@@ -11,4 +11,5 @@ def hello_world():
 @app.route('/pokemon/<type>', methods=['GET'])
 def pokemon(type):
        if request.method=='GET':
-              return 'https://pokeapi.co/api/v2/pokemon/' + type + "  "
+              poke=requests.get('https://pokeapi.co/api/v2/pokemon/' + type)
+              return poke.json()
