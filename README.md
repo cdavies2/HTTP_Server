@@ -3,19 +3,18 @@ After you’ve downloaded the server, you can run it in a Linux command line, su
 
 # GET and PUSH Requests
 In order to access all available functions of this server, you will need to utilize curl commands on a separate terminal from the one you’re running the server on. 
+
 Open the server with the command 
 ```
 curl -X GET http://127.0.0.1:5000
 ```
-Push requests are performed with 
+Push requests are performed with the command below, with the data you wish to post in place of "value"
 ```
 curl -X POST -d “value” http://127.0.0.1:5000
 ```
-with the data you wish to post in place of "value"
 
-To gain access to the Pokemon API, use 
+To gain access to the Pokemon API, use the command below, replacing “type” with the Pokemon of your choice.
 ```
 curl -X GET http://127.0.0.1:5000/pokemon/{type}
 ```
-“Type” is replaced with the Pokemon of your choice.
 
