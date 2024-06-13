@@ -17,7 +17,7 @@ flask --app HelloWorld run
 # GET and POST Requests
 In order to access all available functions of this server, you can utilize curl commands on a separate terminal from the one you’re running the server on. 
 
-Perform a get request with the command below
+Perform a GET request with the command below
 ```
 curl -X GET http://127.0.0.1:5000
 ```
