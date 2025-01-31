@@ -31,3 +31,11 @@ To gain access to the Pokemon API, use the command below, replacing “name” w
 curl -X GET http://127.0.0.1:5000/pokemon/name
 ```
 
+# Running Unit Tests
+Unit tests verify that our server connects and performs requests properly.
+The pytest command runs unit tests and shows if they were successful
+A file must be named "test_...py" or "..._test.py" for this to work
+Run the command below in the server's directory to execute unit tests
+```
+pytest
+```
